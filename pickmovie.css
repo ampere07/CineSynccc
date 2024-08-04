@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+        src:url('fonts/Anonymous_Pro_l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+        src:url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #4e485f; 
+}
+.dotted-line1 {
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.5" height="10"><rect width="5" height="5" fill="black"/></svg>');
+    background-size: 60px 35px;
+    background-repeat: repeat-x;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+}
+.dotted-line2 {
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10"><rect width="5" height="5" fill="black"/></svg>');
+    background-size: 12px 12px;
+    background-repeat: repeat-x;
+    top: 20px;
+    position: absolute;
+    left: 0px;
+}
+.dotted-line3 {
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5.5" height="10"><rect width="5" height="5" fill="black"/></svg>');
+    background-size: 60px 35px;
+    background-repeat: repeat-x;
+    top: 621px;
+    position: absolute;
+    left: 0px;
+}
+.dotted-line4 {
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10"><rect width="5" height="5" fill="black"/></svg>');
+    background-size: 12px 12px;
+    background-repeat: repeat-x;
+    top: 613px;
+    position: absolute;
+    left: 0px;
+}
+
+.now-showing {
+    font-family: 'Roboto';
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-shadow: 0 0 5px white,
+        0 0 10px white,
+        0 0 15px white; 
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 1270px;
+    transition: background-color 0.3s;
+}
+
+.user-icon-button:hover .user-icon {
+    background-color: grey;
+}
+
+.head {
+    width: 24px;
+    height: 24px;
+    background-color: #352F44;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+}
+
+.bodyicon {
+    width: 35px;
+    height: 20px;
+    background-color: #352F44;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top:33px;
+}
+
+        .up-coming {
+    font-family: 'Roboto';
+    color: white;
+    position: absolute;
+    top: 310px;
+    left: 70px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px white,
+        0 0 10px white,
+        0 0 15px white; 
+}
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+
+.upcoming-container {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-transform: uppercase;
+}
+
+.nowshowing,
+.upcoming {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    margin: 5px 0;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.movie,
+.movie1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-image,
+.movie-image1 {
+    width: 120px;
+    transition: width 0.5s; 
+}
+
+.now-showing {
+    margin-bottom: 1px;
+}
+.movie-image:hover {
+    transition: 0.3s;
+    width: 150px;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.title,
+.title1,
+.date,
+.date1 {
+    text-align: center;
+    align-items: center;
+    margin: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    display: block;
+}
+
+.nowshowing-container{
+    position: absolute;
+    top: 63%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-transform: uppercase;
+}
+.bgBorder {
+    position: absolute;
+    left: 1150px;
+    top: 35px;
+    background-color: #696181;
+    border-radius: 8px; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px; 
+    text-align: center;
+    height: 565px; 
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 1180px;
+    width: 150px; 
+}
+
+.user-icon-button {
+    position: absolute;
+    top: 480px;
+    left: -50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.welcome{
+    left:1100px;
+    color:white;
+    position: absolute;
+    top: 170px;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    font-family: 'Roboto';
+}

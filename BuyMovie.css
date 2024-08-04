@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+        src:url('fonts/Anonymous_Pro_l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+        src:url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+        .nextButton {
+            position: absolute;
+            color: white;
+            font-family: 'Roboto';
+            top: 150px;
+            left: 1010px;
+            width: 170px;
+            transform: scale(1); 
+            background-color: #AE98AA;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .nextButton:hover {
+            background-color: gray;
+        }
+        #error-message {
+            position: absolute;
+            font-weight: bold; 
+            display: none;
+            top: 200px;
+            left: 43%;
+            color: red;
+            font-style: 'Roboto';
+        }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4e485f; 
+    overflow: hidden; 
+
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 580px;
+    width: 250px; 
+    height: auto;
+    transform: scale(1.2);
+}
+
+.curtain{
+    position: absolute;
+    top: 0px;
+    width: 1380px;
+    -webkit-user-drag: none; /* WebKit (Safari, Chrome) */
+    pointer-events: none; 
+} 
+
+.QuantityBar input[type="number"]{
+    position: absolute;
+    top: 330px;
+    width: 190px; 
+    transform: scale(1); 
+    left: 165px;
+    background-color: white;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.PriceBar input[type="text"] {
+    position: absolute;
+    top: 420px;
+    width: 190px; 
+    transform: scale(1);
+    left: 165px;
+    background-color: white;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.SeatBar input[type="text"]{
+    position: absolute;
+    top: 510px;
+    width: 190px; 
+    left: 165px;
+    transform: scale(1); 
+    text-align: center;cursor: pointer;
+    background-color: white;
+    height: 45px;
+    border-radius: 10px;     
+
+}    
+
+
+
+.PaymentBar2 input[type="checkbox"]{
+    position: absolute;
+    top: 425px;
+    left:1065px;
+    width: 5%; 
+    transform: scale(1.5); 
+    background-color: white;
+    height: 45px;
+    border-radius: 8px;
+    pointer-events: none; 
+    opacity: 0.5; 
+    text-align: center;
+    cursor: pointer;
+}
+.PaymentBar2 label {
+    position: absolute;
+    top: 500px;
+    left:1105px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-family: 'Roboto';
+
+}
+.PaymentBar3 input[type="checkbox"]{
+    position: absolute;
+    top: 525px;
+    width: 5%; 
+    transform: scale(1.5); 
+    left:1065px;
+    background-color: white;
+    height: 45px;
+    border-radius: 8px;
+    pointer-events: none; 
+    opacity: 0.5; 
+    text-align: center;cursor: pointer;
+    
+}
+.PaymentBar3 label {
+    position: absolute;
+    top: 600px;
+    left:1105px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-family: 'Roboto';
+
+}
+
+
+.SeatPriceBar input[type="text"]{
+    position: absolute;
+    top: 500px;
+    width: 165px; 
+    left: 685px;
+    transform: scale(1); 
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;    
+    text-align: center;        
+}
+.OnlineFeeBar input[type="text"]{
+    position: absolute;
+    top: 540px;
+    left: 685px;
+    width: 165px; 
+    transform: scale(1); 
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;     
+    text-align: center;       
+} 
+.TotalPriceBar input[type="text"]{
+    position: absolute;
+    top: 580px;
+    left: 685px;
+    width: 165px; 
+    transform: scale(1); 
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;     
+    text-align: center;       
+} 
+.square-button {
+    color: white;
+    position: absolute;
+    top: 140px;
+    width:100px; 
+    transform: scale(1); 
+    left: 1055px;
+    background-color: #AE98AA;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.square-button:hover {
+    background-color: #B9B4C7;
+}
+
+.square-button1 {
+    color: white;
+    position: absolute;
+    top: 140px;
+    width:100px; 
+    transform: scale(1); 
+    left: 215px;
+    background-color: #AE98AA;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.square-button1:hover {
+    background-color: #B9B4C7;
+}
+
+.DateTimeMovie {
+    position: absolute;
+    top: 330px;
+    left: 700px;
+    width: 130px;
+    transform: scale(1.3);
+}
+
+.headings-container {
+    display: relative;
+}
+
+.Order {
+    color: white;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 430px;
+    left: 550px; 
+}
+
+.Summarry {
+    color: white;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 430px;
+    left: 670px; 
+}
+
+.Tickets {
+    color: white;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 230px;
+    left: 200px;
+}
+
+.Payment {
+    color: white;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 230px; 
+    left: 1030px; 
+    text-align: center;
+}
+.Quantity {
+    color: white;
+    font-family: 'Roboto';
+    padding-top: 280px;
+    padding-left: 220px;
+    position: absolute;
+
+}
+.Price {
+    color: white;
+    font-family: 'Roboto';
+    padding-top: 375px;
+    padding-left: 212px;
+    position: absolute; 
+
+}
+.Seat {
+    color: white;
+    font-family: 'Roboto';
+    padding-top: 465px;
+    padding-left: 240px;
+    position: absolute;
+
+}
+.SeatPrice {
+    color: white;
+    font-family: 'Roboto';
+    padding-top: 490px;
+    padding-left: 540px;
+    position: absolute;
+
+}
+.OnlineFee {
+    color: white;
+    font-family: 'Roboto';
+    padding-top: 530px;
+    padding-left: 540px;
+    position: absolute; 
+
+}
+.TotalPrice {
+    color: white;
+    font-family: 'Roboto';
+    padding-top: 570px;
+    padding-left: 540px;
+    position: absolute;
+
+}
+
+.dotted-line {
+    width: 1030px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="5" height="5" fill="white"/></svg>');
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    top: 220px;
+    position: absolute;
+    left: 175px;
+}
+.vertical-dotted-line1 {
+    width: 5px; 
+    height: 500px; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect x="0" y="0" width="10" height="4" fill="white" /></svg>');
+    background-size: 12px 12px;
+    background-repeat: repeat-y; 
+    display: block;
+    position: absolute;
+    left: 445px;
+    top: 230px;
+}
+.vertical-dotted-line2 {
+    width: 5px;
+    height: 500px; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect x="0" y="0" width="10" height="4" fill="white" /></svg>');
+    background-size: 12px 12px;
+    background-repeat: repeat-y;
+    display: block;
+    position: absolute;
+    left: 945px;
+    top: 230px;
+}
+
+.movie {
+    width: 120px;
+    top: 250px;
+    left: 520px;
+    position: absolute; 
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+.next {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 140px;
+    left: 1055px;
+    width: 100px;
+    transform: scale(1); 
+    background-color: #AE98AA;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+.next:hover {
+    background-color: gray;
+}
+.back {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 140px;
+    left: 215px;
+    width: 100px;
+    transform: scale(1); 
+    background-color: #AE98AA;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+.back:hover {
+    background-color: gray;
+}
+        .selectSeat {
+            position: absolute;
+            color: white;
+            font-family: 'Roboto';
+            top: 570px;
+            left: 202px;
+            width: 125px;
+            transform: scale(1); 
+            background-color: #AE98AA;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .selectSeat:hover {
+            background-color: gray;
+        }
+
+        
+        .backButton {
+            position: absolute;
+            color: white;
+            font-family: 'Roboto';
+            top: 150px;
+            left: 200px;
+            width: 125px;
+            transform: scale(1); 
+            background-color: #AE98AA;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .backButton:hover {
+            background-color: gray;
+        }
+        .title {
+            position: absolute;
+            font-family: 'Roboto';
+    color: white;
+    left: 48%;
+    text-transform: uppercase;
+    width: 250px;
+top:245px;
+    word-wrap: break-word;
+    text-align: center;
+    display: block;
+}
+.DateOfMovie {
+    top: 225px;
+    left: 53%;
+    color: white;
+    position: absolute;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+
+}
+.checkbox-time {
+    font-weight: 20px;
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+    grid-gap: 10px;
+    cursor: pointer;
+    top: 340px;
+    left:725px;
+    font-family: 'Roboto';
+}
+
+
+.movieGet {
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 10px;
+}
+

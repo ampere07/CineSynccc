@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url('fonts/Anonymous_Pro_l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #4e485f; 
+}
+
+.rectangle-box {
+    background-color: #696181;
+    border-radius: 8px; 
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px; 
+    height: 560px;
+
+}
+.logo{
+    position: absolute;
+    width: 250px;
+    left: 75px;
+}
+.user{
+    position: absolute;
+    top: 170px;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    font-family: 'Roboto';
+}
+
+.logoutButton {
+    position: absolute;
+    top: 550px;
+    left: 130px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    background-color: red;
+    color: white;
+    font-size: 20px;  
+    border: none;
+}
+.logoutButton:hover {
+    transition: 0.3s;
+    background-color: rgb(131, 43, 43);
+}
+
+.purchased{
+    position: absolute;
+    top: 250px;
+    left:130px;
+    font-family: 'Roboto';
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+
+.account{
+    position: absolute;
+    top: 300px;
+    left:140px;
+    font-family: 'Roboto';
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+.purchased.active,.account.active{
+        border-radius: 5px;
+        background-color: #4e495f;
+        border: 9px solid #4e495f;
+    }
+
+
+.mainTable {
+    position: absolute;
+    left: 390px;
+    top: 20px;
+    background-color: #696181;
+    border-radius: 8px; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 950px; 
+    text-align: center;
+    height: 600px; /* Adjust the max height as needed */
+    overflow-y: auto; /* Enable vertical scroll */
+    
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+    font-family: 'Roboto';
+
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    color: black;
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #4e495f;
+}
+
+
+.usernameBox {
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    border-radius: 8px; 
+    color: white;
+    left: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 50px;
+    font-family: 'Roboto';
+}
+.emailBox {
+    position: absolute;
+    top: 90px;
+    background-color: white;
+    border-radius: 8px; 
+    color: white;
+    left: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 50px;
+    font-family: 'Roboto';
+}
+.passwordBox {
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    border-radius: 8px; 
+    color: white;
+    left: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 50px;
+    font-family: 'Roboto';
+}
+
+.username{
+    background-color: #897fa7;
+    font-family: 'Roboto';
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    width: 100px;
+    border-radius: 8px 0px 0px 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usernameText{
+    color: black;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.email {
+    background-color: #897fa7;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    border-radius: 8px 0px 0px 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailText{
+    color: black;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.password {
+    background-color: #897fa7;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    border-radius: 8px 0px 0px 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passwordText{
+    color: black;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.updateAccount {
+    position: absolute;
+    top: 530px;
+    left: 750px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto';
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+
+}
+
+.updateAccount:hover{
+    background-color: rgb(0, 83, 0);
+}
+
+.usernameEdit{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 693px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 20px;
+}
+
+.emailEdit{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 693px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 20px;
+}
+
+.passwordEdit{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 693px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 20px;
+}
+.backButton {
+    position: absolute;
+    color: white;
+    top: 500px;
+    left: 130px;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    background-color: #897fa7;
+    font-family: 'Roboto';
+    font-size: 19px;
+    transition: 0.3s;
+
+}
+.backButton:hover{
+    background-color: #4e485f;
+}

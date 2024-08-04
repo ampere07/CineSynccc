@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url('fonts/Anonymous_Pro_l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="date"],
+input[type="submit"] {
+    width: 100%;
+    padding: 7px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type="file"]::before {
+    content: 'Choose File';
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: border-color 0.3s;
+}
+
+input[type="file"]:hover{
+    background-color: #555;
+    color: white;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="file"]:hover,
+input[type="date"]:hover,
+input[type="date"]:focus {
+    cursor: text;
+}
+.now-showing {
+    position: absolute;
+    top:20px;
+    left: 470px;
+}
+
+.up-coming {
+    position: absolute;
+    top: 320px;
+    left: 490px;
+}
+.nowshowing {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: calc(1000px - 60px);
+}
+
+.upcoming {
+    position: absolute;
+    top: 415px;
+    left: 30px;
+    width: calc(1000px - 60px);
+}
+.movies-1 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 80px;
+    left: 85px;
+}
+.movies-2 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 80px;
+    left: 260px;
+}
+.movies-3 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 80px;
+    left: 440px;
+}
+.movies-4 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 80px;
+    left: 610px;
+}
+.movies-5 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 80px;
+    left: 790px;
+}
+.movies-6 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 80px;
+    left: 965px;
+}
+
+.movie-1 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 375px;
+    left: 85px;
+}
+.movie-2 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 375px;
+    left: 260px;
+}
+.movie-3 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 375px;
+    left: 440px;
+}
+.movie-4 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 375px;
+    left: 615px;
+}
+.movie-5 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 375px;
+    left: 790px;
+}
+.movie-6 {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 375px;
+    left: 965px;
+}
+.logoutButton {
+    position: absolute;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    top: 550px;
+    left: 1205px;
+    transform: translateX(-25px);
+    width: 120px !important;
+    height: 50px !important;
+    font-family: 'Roboto';
+    font-size: 20px;
+    transition: 0.3s;
+}
+.logoutButton:hover {
+    background-color: white;
+    color: red;
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 1150px;
+    width: 180px; 
+    height: auto;
+    transform: scale(1.2);
+}
+.welcome {
+    position: absolute;
+    color: white;
+    top: 150px;
+    font-family: 'Roboto';
+    left: 1175px
+}
+.admin {
+    position: absolute;
+    color: white;
+    top: 190px;
+    font-family: 'Roboto';
+    left: 1205px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4e485f; 
+}
+
+.now-showing, .up-coming {
+    font-family: 'Roboto';
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; 
+}
+
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0px;
+    margin: 0px;
+}
+
+.movie {
+    padding: 10px;
+}
+
+input[type="file"]::before {
+    background-color: green;
+    color: white;
+}
+
+input.error {
+    border-color: red;
+}
+
+.movieDetails,
+.timeDetails {
+    position: absolute;
+    background-color: white;
+    color: #4e485f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+.movieDetails {
+    top: 280px;
+    left: 1190px;
+    width: 100px;
+    height: 30px;
+}
+
+.timeDetails {
+    top: 320px;
+    left: 1190px;
+    width: 100px;
+    height: 30px;
+}
+
+.movies-container-time {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 0px;
+}
+
+.time-slots input[type="time"] {
+width: 130px;
+margin: 3px;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+.resetSeats {
+    position: absolute;
+    top: 400px;
+    left: 1190px;
+    width: 100px;
+    background-color: white;
+    color: #4e485f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+.resetSeats:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.movieDetails:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.timeDetails:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.rectangle-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #696181;
+    border-radius: 8px; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 1080px; 
+    height: 600px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    color: white;
+    background-color: #696181;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.confirmButton, .cancelButton {
+    margin: 10px;
+}
+.confirmButton {
+    border: none;
+    background-color: green;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+.cancelButton{
+    border: none;
+    background-color: red;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.cancelButton:hover{
+    background-color: white;
+    color: #696181;
+    transition: 0.3s;
+}
+.confirmButton:hover{
+    background-color: white;
+    color: #696181;
+    transition: 0.3s;
+}
+
+.rawProfit {
+    position: absolute;
+    top: 450px;
+    left: 1190px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: #696181;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+.rawProfit:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+
+}
+/* Modal container */
+.modal1 {
+    font-family: 'Roboto';
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content1 {
+    background-color: #fefefe;
+    margin: auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 80% width */
+    height: 93%; /* 50% height */
+    overflow-y: auto; /* Scrollable if content overflows */
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #ddd;
+    color: black; /* Titles in black */
+    position: sticky;
+    top: 0;
+}
+
+tbody td {
+    color: #000; /* Values in black */
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.totalA {
+    color: black;
+}
+.totalP {
+    color: black;
+}
+tfoot {
+    background-color: #ddd;
+    color: black;
+}
+tfoot td {
+    padding: 10px;
+    border: 2px solid #888;
+}

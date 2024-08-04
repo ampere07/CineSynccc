@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+        src:url('fonts/Anonymous_Pro_l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+        src:url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #4e485f; 
+}
+
+.seatplan {
+    position: absolute;
+    z-index: 2;
+}
+
+.seatplan button {
+    border: #F1F6E1;
+    border-radius: 5px;
+    background-color: #F1F6E1;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    color: #F1F6E1;
+    z-index: 1; /* Increase z-index for buttons */
+
+}
+
+.seatplan button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.seatplan button.clicked{
+    background-color: black;
+}
+
+.seatplan1 {
+    position: absolute;
+    z-index: 2;
+}
+
+.seatplan1 button {
+    border: #F1F6E1;
+    border-radius: 5px;
+    background-color: #F1F6E1;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    color: #F1F6E1;
+    z-index: 1;
+
+}
+
+.seatplan1 button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.seatplan1 button.clicked{
+    background-color: black;
+}
+
+.seatplan2 {
+    position: absolute;
+    z-index: 2;
+}
+
+.seatplan2 button {
+    border: #F1F6E1;
+    border-radius: 5px;
+    background-color: #F1F6E1;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    color: #F1F6E1;
+    z-index: 1; /* Increase z-index for buttons */
+
+}
+
+.seatplan2 button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.seatplan2 button.clicked{
+    background-color: black;
+}
+
+.seatplan3 {
+    position: absolute;
+    z-index: 2;
+}
+
+.seatplan3 button {
+    border: #F1F6E1;
+    border-radius: 5px;
+    background-color: #F1F6E1;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    color: #F1F6E1;
+    z-index: 1; /* Increase z-index for buttons */
+
+}
+
+.seatplan3 button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.seatplan3 button.clicked{
+    background-color: black;
+}
+
+.seatplan4 {
+    position: absolute;
+    z-index: 2;
+}
+
+.seatplan4 button {
+    border: #F1F6E1;
+    border-radius: 5px;
+    background-color: #F1F6E1;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    color: #F1F6E1;
+    z-index: 1; /* Increase z-index for buttons */
+
+}
+
+.seatplan4 button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.seatplan4 button.clicked{
+    background-color: black;
+}
+
+.seatplan5 {
+    position: absolute;
+    z-index: 2;
+    color: black;
+}
+
+.seatplan5 button {
+    
+    border: #F1F6E1;
+    border-radius: 5px;
+    background-color: #F1F6E1;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    color: #F1F6E1;
+    z-index: 1; /* Increase z-index for buttons */
+
+}
+
+.seatplan5 button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.seatplan5 button.clicked{
+    background-color: black;
+}
+.next {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 550px;
+    left: 1220px;
+    width: 100px;
+    transform: scale(1); 
+    background-color: #AE98AA;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+.next:hover {
+    background-color: gray;
+}
+.back {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    top: 550px;
+    left: 40px;
+    width: 100px;
+    transform: scale(1); 
+    background-color: #AE98AA;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+.back:hover {
+    background-color: gray;
+}
+.legend {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 42px;
+    left: 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-item:last-child {
+    margin-bottom: 0;
+}
+
+.seat {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.taken {
+    background-color: #B8A9C9; 
+}
+
+.selected {
+    background-color: #000; 
+}
+
+.available {
+    background-color: #F1F6E1;
+}
+.screen-label {
+    position: absolute;
+    font-family: 'Roboto';
+    color: white;
+    top: 575px;
+    left: 525px;
+    padding: 5px 155px;
+    border: 4px solid #F1F6E1;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.container {
+    display: flex;
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 315px;
+    left: 405px;
+    border: none;
+    border-top: 5px solid #F1F6E1;
+    width: 630px;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 40px;
+    left: 210px;
+    width: 5px; 
+    height: 250px;
+    background-color: #F1F6E1;
+}
+.vertical-line1 {
+    position: absolute;
+    top: 40px;
+    left: 1225px;
+    width: 5px;
+    height: 250px;
+    background-color: #F1F6E1;
+}
+.vertical-text {
+    position: absolute;
+    top: 35px;
+    left: 350px;
+    writing-mode: vertical-rl;
+    font-size: 30px;
+    text-orientation: upright;
+    color: white;
+    font-family: 'Roboto';
+}
+.vertical-text1 {
+    position: absolute;
+    top: 35px;
+    left: 1050px;
+    writing-mode: vertical-rl;
+    font-size: 30px;
+    text-orientation: upright;
+    color: white;
+    font-family: 'Roboto';
+}
+.vertical-text2 {
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    writing-mode: vertical-rl;
+    font-size: 30px;
+    text-orientation: upright;
+    color: white;
+    font-family: 'Roboto';
+}
+.vertical-text3 {
+    position: absolute;
+    top: 350px;
+    left: 1050px;
+    writing-mode: vertical-rl;
+    font-size: 30px;
+    text-orientation: upright;
+    color: white;
+    font-family: 'Roboto';
+}
